@@ -1,71 +1,102 @@
-# Disease-prediction
 
-🩺 Disease Detector
+---
 
-📌 Overview
+# 🩺 Disease Detector
 
-The Disease Detector is a machine learning project designed to predict diseases based on patient health data. The model is trained using classification techniques to analyze symptoms/medical attributes and provide predictions that can assist in healthcare diagnostics.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-yellow?logo=scikit-learn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-005571?logo=plotly)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This project is implemented in Python with Jupyter Notebook and leverages machine learning libraries for training and evaluation.
+---
 
-🚀 Features
+## 📌 Overview
 
-Data preprocessing and cleaning for health-related datasets
-Training ML models for disease prediction
-Model evaluation with accuracy and metrics
-Exporting trained model for reuse
-Easy-to-use interface via Jupyter Notebook
+The **Disease Detector** is a machine learning project designed to predict diseases based on patient health data.
+By leveraging classification algorithms, the model analyzes symptoms and medical attributes to generate predictions that can support healthcare diagnostics.
 
-🛠️ Technologies Used
+This project is implemented in **Python** using **Jupyter Notebook**, with machine learning libraries for training, evaluation, and deployment.
 
-Python 3.x
-NumPy, Pandas → Data handling
-Scikit-learn → Machine learning algorithms
-Matplotlib, Seaborn → Visualization
-Joblib → Model persistence
+---
 
-📂 Project Structure
+## 🚀 Features
+
+* **Data Preprocessing & Cleaning** – Handles missing values, normalization, and dataset preparation.
+* **Machine Learning Models** – Trains models (e.g., Random Forest, Logistic Regression) for disease prediction.
+* **Model Evaluation** – Uses accuracy, confusion matrix, and classification metrics.
+* **Model Persistence** – Saves trained models with Joblib for reuse.
+* **Interactive Notebook** – Step-by-step experimentation via Jupyter Notebook.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3.x**
+* **NumPy, Pandas** → Data handling & preprocessing
+* **Scikit-learn** → ML algorithms & evaluation
+* **Matplotlib, Seaborn** → Data visualization
+* **Joblib** → Model persistence
+
+---
+
+## 📂 Project Structure
+
+```
 Disease_Detector/
+│── heart_dataset            #dataset
+│── heart_user_template
 │── Disease_Detector.ipynb   # Main Jupyter Notebook
-│── requirements.txt         # List of dependencies
 │── README.md                # Project documentation
-│── models/                  # Saved ML models
-│── data/                    # Dataset (if available)
+```
 
-⚙️ Installation
+---
 
-Clone the repository:
-git clone https://github.com/your-username/Disease_Detector.git  cd Disease_Detector
+## ⚙️ Installation
 
+1. **Clone the repository**
 
-Create and activate a virtual environment (recommended):
-python -m venv venv
-source venv/bin/activate    # On Linux/Mac
-venv\Scripts\activate       # On Windows
+   ```bash
+   git clone https://github.com/your-username/Disease_Detector.git
+   cd Disease_Detector
+   ```
+---
 
+## ▶️ Usage
 
-Install dependencies:
-pip install -r requirements.txt
+1. Open the Jupyter/Colab Notebook:
 
-▶️ Usage
+   ```bash
+   jupyter notebook Disease_Detector.ipynb
+   ```
 
-Open Colab Notebook:
+2. Run the notebook step by step to:
 
-Run the Disease_Detector.ipynb file step by step.
+   * Load & preprocess data
+   * Train ML models
+   * Evaluate performance
+   * Save the trained model
 
-Train the model and generate predictions.
+3. (Optional) Use the saved **`.pkl`** model for deployment in other applications.
 
-(Optional) Use the saved model (.pkl file) for deployment in other applications.
+---
 
-📊 Example Workflow
-Load dataset
-Preprocess data
-Train ML model (Random Forest / Logistic Regression / etc.)
-Evaluate accuracy, confusion matrix
-Save trained model for later usage
+## 📊 Example Workflow
 
-🔮 Future Improvements
-Build a Streamlit Web App for user-friendly interaction
-Expand dataset for more disease categories
-Add Deep Learning models for better accuracy
-Deploy on Cloud (AWS/GCP/Heroku)
+1. Load dataset
+2. Preprocess data (cleaning, normalization, feature selection)
+3. Train ML model (Random Forest / Logistic Regression / etc.)
+4. Evaluate performance (accuracy, confusion matrix)
+5. Save model for later use
+---
+
+## 🔮 Future Improvements
+
+* Develop a **Streamlit Web App** for a user-friendly interface
+* Expand dataset to cover **more disease categories**
+* Integrate **Deep Learning models** for improved accuracy
+* Deploy on **Cloud platforms (AWS, GCP, Heroku)** for scalability
+
+---
+
